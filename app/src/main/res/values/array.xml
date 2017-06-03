@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listentries" >
+        <item>Receive from UDP (Port 5000)</item>
+        <item>Receive from raw h.264 file</item>
+        <item>Receive from test file</item>
+    </string-array>
+    <string-array name="listvalues">
+        <item>UDP</item>
+        <item>FILE</item>
+        <item>ASSETS</item>
+    </string-array>
+
+    <string-array name="listentries2" >
+        <item>Use Default HW decoder</item>
+        <item>Use Google SW decoder(pretty slow,but tested)</item>
+    </string-array>
+    <string-array name="listvalues2">
+        <item>HW</item>
+        <item>SW</item>
+    </string-array>
+
+    <string-array name="listentries3" >
+        <item>Cardboard V1</item>
+        <item>Cardboard V2</item>
+        <item>GearVR</item>
+        <item>Daydream</item>
+        <item>Manually</item>
+    </string-array>
+    <string-array name="listvalues3">
+        <item>CV1</item>
+        <item>CV2</item>
+        <item>GVR</item>
+        <item>DD</item>
+        <item>Manually</item>
+    </string-array>
+
+
+
+</resources>

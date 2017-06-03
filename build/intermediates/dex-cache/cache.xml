@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f5a92195a82d45e28592c738395fb80116996a48\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\library\build\intermediates\bundles\default\libs\libprotobuf-java-2.3-nano.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ac2e8b80ab8545b61640b175168cd76e6bd5a3b4">
+        <dex dex="C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\build\intermediates\transforms\dex\debug\folders\1000\8\libprotobuf-java-2.3-nano_ff84c32fec7dd63b812cd962086be8edfbac2c50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="afa1b4762d9720a1715f974d62a39b9ddba5ab47">
+        <dex dex="C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_38a69567973656f399c9627ac18c17829e346a61\classes.dex" />
+    </item>
+
+</items>
