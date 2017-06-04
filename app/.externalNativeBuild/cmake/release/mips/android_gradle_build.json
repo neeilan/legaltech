@@ -1,13 +1,10 @@
 
 {
-	"buildFiles" : 
-	[
-		"C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/CMakeLists.txt"
-	],
+	"buildFiles" : [ "/Users/abdulhadimohamed/legaltech/CMakeLists.txt" ],
 	"cFileExtensions" : [ "c" ],
 	"cleanCommands" : 
 	[
-		"C:\\Users\\Constantin\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build \"C:\\Users\\Constantin\\Desktop\\Android Studio Projects\\FPV_VR\\app\\.externalNativeBuild\\cmake\\release\\mips\" --target clean"
+		"/Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/mips --target clean"
 	],
 	"libraries" : 
 	{
@@ -15,63 +12,63 @@
 		{
 			"abi" : "mips",
 			"artifactName" : "VsyncHelperNative",
-			"buildCommand" : "C:\\Users\\Constantin\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build \"C:\\Users\\Constantin\\Desktop\\Android Studio Projects\\FPV_VR\\app\\.externalNativeBuild\\cmake\\release\\mips\" --target VsyncHelperNative",
+			"buildCommand" : "/Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/mips --target VsyncHelperNative",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -DVsyncHelperNative_EXPORTS -I..\\..\\..\\..\\src\\main\\c-ndk -I..\\..\\..\\..\\src\\main\\c-ndk\\package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
-					"src" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/src/main/c-ndk/package2/VsyncHelperNative.c",
-					"workingDirectory" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/release/mips"
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -DVsyncHelperNative_EXPORTS -I../../../../src/main/c-ndk -I../../../../src/main/c-ndk/package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/abdulhadimohamed/legaltech/app/src/main/c-ndk/package2/VsyncHelperNative.c",
+					"workingDirectory" : "/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/mips"
 				}
 			],
-			"output" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/build/intermediates/cmake/release/obj/mips/libVsyncHelperNative.so",
-			"toolchain" : "2207939819"
+			"output" : "/Users/abdulhadimohamed/legaltech/app/build/intermediates/cmake/release/obj/mips/libVsyncHelperNative.so",
+			"toolchain" : "14089076456727345415"
 		},
 		"parser-Release-mips" : 
 		{
 			"abi" : "mips",
 			"artifactName" : "parser",
-			"buildCommand" : "C:\\Users\\Constantin\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build \"C:\\Users\\Constantin\\Desktop\\Android Studio Projects\\FPV_VR\\app\\.externalNativeBuild\\cmake\\release\\mips\" --target parser",
+			"buildCommand" : "/Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/mips --target parser",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dparser_EXPORTS -I..\\..\\..\\..\\src\\main\\c-ndk -I..\\..\\..\\..\\src\\main\\c-ndk\\package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
-					"src" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/src/main/c-ndk/parser.c",
-					"workingDirectory" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/release/mips"
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dparser_EXPORTS -I../../../../src/main/c-ndk -I../../../../src/main/c-ndk/package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/abdulhadimohamed/legaltech/app/src/main/c-ndk/parser.c",
+					"workingDirectory" : "/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/mips"
 				}
 			],
-			"output" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/build/intermediates/cmake/release/obj/mips/libparser.so",
-			"toolchain" : "2207939819"
+			"output" : "/Users/abdulhadimohamed/legaltech/app/build/intermediates/cmake/release/obj/mips/libparser.so",
+			"toolchain" : "14089076456727345415"
 		},
 		"qcom-Release-mips" : 
 		{
 			"abi" : "mips",
 			"artifactName" : "qcom",
-			"buildCommand" : "C:\\Users\\Constantin\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build \"C:\\Users\\Constantin\\Desktop\\Android Studio Projects\\FPV_VR\\app\\.externalNativeBuild\\cmake\\release\\mips\" --target qcom",
+			"buildCommand" : "/Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/mips --target qcom",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dqcom_EXPORTS -I..\\..\\..\\..\\src\\main\\c-ndk -I..\\..\\..\\..\\src\\main\\c-ndk\\package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
-					"src" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/src/main/c-ndk/qcom.c",
-					"workingDirectory" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/release/mips"
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dqcom_EXPORTS -I../../../../src/main/c-ndk -I../../../../src/main/c-ndk/package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/abdulhadimohamed/legaltech/app/src/main/c-ndk/qcom.c",
+					"workingDirectory" : "/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/mips"
 				}
 			],
-			"output" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/build/intermediates/cmake/release/obj/mips/libqcom.so",
-			"toolchain" : "2207939819"
+			"output" : "/Users/abdulhadimohamed/legaltech/app/build/intermediates/cmake/release/obj/mips/libqcom.so",
+			"toolchain" : "14089076456727345415"
 		}
 	},
 	"toolchains" : 
 	{
-		"2207939819" : 
+		"14089076456727345415" : 
 		{
-			"cCompilerExecutable" : "C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
-			"cppCompilerExecutable" : "C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+			"cCompilerExecutable" : "/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
 		}
 	}
 }

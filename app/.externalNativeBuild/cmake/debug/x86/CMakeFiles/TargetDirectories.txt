@@ -1,5 +1,5 @@
-C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/parser.dir
-C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/qcom.dir
-C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
-C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/VsyncHelperNative.dir
-C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/VsyncHelperNative.dir
+/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/qcom.dir
+/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/parser.dir

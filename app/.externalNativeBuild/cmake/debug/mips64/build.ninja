@@ -29,36 +29,55 @@ ninja_required_version = 1.5
 
 include rules.ninja
 
-# =============================================================================
-# Object build statements for SHARED_LIBRARY target parser
 
-build CMakeFiles/parser.dir/app/src/main/c-ndk/parser.c.o: C_COMPILER__parser ../../../../src/main/c-ndk/parser.c
-  DEFINES = -Dparser_EXPORTS
-  DEP_FILE = CMakeFiles\parser.dir\app\src\main\c-ndk\parser.c.o.d
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/debug/mips64 && /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/debug/mips64 && /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake -H/Users/abdulhadimohamed/legaltech -B/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/debug/mips64
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target VsyncHelperNative
+
+build CMakeFiles/VsyncHelperNative.dir/app/src/main/c-ndk/package2/VsyncHelperNative.c.o: C_COMPILER__VsyncHelperNative ../../../../src/main/c-ndk/package2/VsyncHelperNative.c
+  DEFINES = -DVsyncHelperNative_EXPORTS
+  DEP_FILE = CMakeFiles/VsyncHelperNative.dir/app/src/main/c-ndk/package2/VsyncHelperNative.c.o.d
   FLAGS = -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I../../../../src/main/c-ndk -I../../../../src/main/c-ndk/package2
-  IN_ABS = "C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\src\main\c-ndk\parser.c"
-  OBJECT_DIR = CMakeFiles\parser.dir
-  OBJECT_FILE_DIR = CMakeFiles\parser.dir\app\src\main\c-ndk
+  IN_ABS = /Users/abdulhadimohamed/legaltech/app/src/main/c-ndk/package2/VsyncHelperNative.c
+  OBJECT_DIR = CMakeFiles/VsyncHelperNative.dir
+  OBJECT_FILE_DIR = CMakeFiles/VsyncHelperNative.dir/app/src/main/c-ndk/package2
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target parser
+# Link build statements for SHARED_LIBRARY target VsyncHelperNative
 
 
 #############################################
-# Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\mips64\libparser.so
+# Link the shared library ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so
 
-build ../../../../build/intermediates/cmake/debug/obj/mips64/libparser.so: C_SHARED_LIBRARY_LINKER__parser CMakeFiles/parser.dir/app/src/main/c-ndk/parser.c.o | C$:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64/liblog.so
+build ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so: C_SHARED_LIBRARY_LINKER__VsyncHelperNative CMakeFiles/VsyncHelperNative.dir/app/src/main/c-ndk/package2/VsyncHelperNative.c.o | /Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64/liblog.so
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
   LINK_LIBRARIES = -llog -lm
-  OBJECT_DIR = CMakeFiles\parser.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  SONAME = libparser.so
+  OBJECT_DIR = CMakeFiles/VsyncHelperNative.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libVsyncHelperNative.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\debug\obj\mips64\libparser.so
-  TARGET_PDB = parser.so.dbg
+  TARGET_FILE = ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so
+  TARGET_PDB = VsyncHelperNative.so.dbg
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target qcom
 
@@ -69,80 +88,61 @@ build ../../../../build/intermediates/cmake/debug/obj/mips64/libparser.so: C_SHA
 build cmake_order_depends_target_qcom: phony || ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so
 build CMakeFiles/qcom.dir/app/src/main/c-ndk/qcom.c.o: C_COMPILER__qcom ../../../../src/main/c-ndk/qcom.c || cmake_order_depends_target_qcom
   DEFINES = -Dqcom_EXPORTS
-  DEP_FILE = CMakeFiles\qcom.dir\app\src\main\c-ndk\qcom.c.o.d
+  DEP_FILE = CMakeFiles/qcom.dir/app/src/main/c-ndk/qcom.c.o.d
   FLAGS = -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I../../../../src/main/c-ndk -I../../../../src/main/c-ndk/package2
-  IN_ABS = "C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\src\main\c-ndk\qcom.c"
-  OBJECT_DIR = CMakeFiles\qcom.dir
-  OBJECT_FILE_DIR = CMakeFiles\qcom.dir\app\src\main\c-ndk
+  IN_ABS = /Users/abdulhadimohamed/legaltech/app/src/main/c-ndk/qcom.c
+  OBJECT_DIR = CMakeFiles/qcom.dir
+  OBJECT_FILE_DIR = CMakeFiles/qcom.dir/app/src/main/c-ndk
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target qcom
 
 
 #############################################
-# Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\mips64\libqcom.so
+# Link the shared library ../../../../build/intermediates/cmake/debug/obj/mips64/libqcom.so
 
-build ../../../../build/intermediates/cmake/debug/obj/mips64/libqcom.so: C_SHARED_LIBRARY_LINKER__qcom CMakeFiles/qcom.dir/app/src/main/c-ndk/qcom.c.o | C$:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64/liblog.so ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so C$:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64/liblog.so || ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so
+build ../../../../build/intermediates/cmake/debug/obj/mips64/libqcom.so: C_SHARED_LIBRARY_LINKER__qcom CMakeFiles/qcom.dir/app/src/main/c-ndk/qcom.c.o | /Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64/liblog.so ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so /Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64/liblog.so || ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
   LINK_LIBRARIES = -llog ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so -landroid -llog -lEGL -lGLESv2 -llog -lm
-  OBJECT_DIR = CMakeFiles\qcom.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
+  OBJECT_DIR = CMakeFiles/qcom.dir
+  POST_BUILD = :
+  PRE_LINK = :
   SONAME = libqcom.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\debug\obj\mips64\libqcom.so
+  TARGET_FILE = ../../../../build/intermediates/cmake/debug/obj/mips64/libqcom.so
   TARGET_PDB = qcom.so.dbg
-
-#############################################
-# Utility command for rebuild_cache
-
-build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\.externalNativeBuild\cmake\debug\mips64" && C:\Users\Constantin\AppData\Local\Android\Sdk\cmake\3.6.3155560\bin\cmake.exe -H"C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR" -B"C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\.externalNativeBuild\cmake\debug\mips64""
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target VsyncHelperNative
+# Object build statements for SHARED_LIBRARY target parser
 
-build CMakeFiles/VsyncHelperNative.dir/app/src/main/c-ndk/package2/VsyncHelperNative.c.o: C_COMPILER__VsyncHelperNative ../../../../src/main/c-ndk/package2/VsyncHelperNative.c
-  DEFINES = -DVsyncHelperNative_EXPORTS
-  DEP_FILE = CMakeFiles\VsyncHelperNative.dir\app\src\main\c-ndk\package2\VsyncHelperNative.c.o.d
+build CMakeFiles/parser.dir/app/src/main/c-ndk/parser.c.o: C_COMPILER__parser ../../../../src/main/c-ndk/parser.c
+  DEFINES = -Dparser_EXPORTS
+  DEP_FILE = CMakeFiles/parser.dir/app/src/main/c-ndk/parser.c.o.d
   FLAGS = -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I../../../../src/main/c-ndk -I../../../../src/main/c-ndk/package2
-  IN_ABS = "C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\src\main\c-ndk\package2\VsyncHelperNative.c"
-  OBJECT_DIR = CMakeFiles\VsyncHelperNative.dir
-  OBJECT_FILE_DIR = CMakeFiles\VsyncHelperNative.dir\app\src\main\c-ndk\package2
+  IN_ABS = /Users/abdulhadimohamed/legaltech/app/src/main/c-ndk/parser.c
+  OBJECT_DIR = CMakeFiles/parser.dir
+  OBJECT_FILE_DIR = CMakeFiles/parser.dir/app/src/main/c-ndk
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target VsyncHelperNative
+# Link build statements for SHARED_LIBRARY target parser
 
 
 #############################################
-# Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\mips64\libVsyncHelperNative.so
+# Link the shared library ../../../../build/intermediates/cmake/debug/obj/mips64/libparser.so
 
-build ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so: C_SHARED_LIBRARY_LINKER__VsyncHelperNative CMakeFiles/VsyncHelperNative.dir/app/src/main/c-ndk/package2/VsyncHelperNative.c.o | C$:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64/liblog.so
+build ../../../../build/intermediates/cmake/debug/obj/mips64/libparser.so: C_SHARED_LIBRARY_LINKER__parser CMakeFiles/parser.dir/app/src/main/c-ndk/parser.c.o | /Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips64/usr/lib64/liblog.so
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
   LINK_LIBRARIES = -llog -lm
-  OBJECT_DIR = CMakeFiles\VsyncHelperNative.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  SONAME = libVsyncHelperNative.so
+  OBJECT_DIR = CMakeFiles/parser.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libparser.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\debug\obj\mips64\libVsyncHelperNative.so
-  TARGET_PDB = VsyncHelperNative.so.dbg
-
-#############################################
-# Utility command for edit_cache
-
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\.externalNativeBuild\cmake\debug\mips64" && C:\Users\Constantin\AppData\Local\Android\Sdk\cmake\3.6.3155560\bin\cmake.exe -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-build edit_cache: phony CMakeFiles/edit_cache.util
+  TARGET_FILE = ../../../../build/intermediates/cmake/debug/obj/mips64/libparser.so
+  TARGET_PDB = parser.so.dbg
 # =============================================================================
 # Target aliases.
 
@@ -163,7 +163,7 @@ build qcom: phony ../../../../build/intermediates/cmake/debug/obj/mips64/libqcom
 #############################################
 # The main all target.
 
-build all: phony ../../../../build/intermediates/cmake/debug/obj/mips64/libparser.so ../../../../build/intermediates/cmake/debug/obj/mips64/libqcom.so ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so
+build all: phony ../../../../build/intermediates/cmake/debug/obj/mips64/libVsyncHelperNative.so ../../../../build/intermediates/cmake/debug/obj/mips64/libqcom.so ../../../../build/intermediates/cmake/debug/obj/mips64/libparser.so
 
 #############################################
 # Make the all target the default.
@@ -173,13 +173,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../../../../../CMakeLists.txt C$:/Users/Constantin/AppData/Local/Android/Sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCCompiler.cmake.in C$:/Users/Constantin/AppData/Local/Android/Sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCCompilerABI.c C$:/Users/Constantin/AppData/Local/Android/Sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXCompiler.cmake.in C$:/Users/Constantin/AppData/Local/Android/Sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp C$:/Users/Constantin/AppData/Local/Android/Sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystem.cmake.in C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCInformation.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXInformation.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompiler.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeFindBinUtils.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeGenericSystem.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCCompiler.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCXXCompiler.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCompilerCommon.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-C-FeatureTests.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-C.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX-FeatureTests.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX-TestableFeatures.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/GNU.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Internal/FeatureTesting.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/Android.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/Linux.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/UnixPaths.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx
+build build.ninja: RERUN_CMAKE | ../../../../../CMakeLists.txt /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCCompiler.cmake.in /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCCompilerABI.c /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCInformation.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXCompiler.cmake.in /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXInformation.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCXXCompiler.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompileFeatures.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompiler.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompilerABI.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeFindBinUtils.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeGenericSystem.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeParseImplicitLinkInfo.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystem.cmake.in /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCCompiler.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCXXCompiler.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCompilerCommon.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-C-FeatureTests.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-C.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX-FeatureTests.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX-TestableFeatures.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/GNU.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Internal/FeatureTesting.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/Android.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/Linux.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/UnixPaths.cmake /Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../../../../../CMakeLists.txt C$:/Users/Constantin/AppData/Local/Android/Sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCCompiler.cmake.in C$:/Users/Constantin/AppData/Local/Android/Sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCCompilerABI.c C$:/Users/Constantin/AppData/Local/Android/Sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXCompiler.cmake.in C$:/Users/Constantin/AppData/Local/Android/Sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp C$:/Users/Constantin/AppData/Local/Android/Sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystem.cmake.in C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCInformation.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXInformation.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompiler.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeFindBinUtils.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeGenericSystem.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCCompiler.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCXXCompiler.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCompilerCommon.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-C-FeatureTests.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-C.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX-FeatureTests.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX-TestableFeatures.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/GNU.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Internal/FeatureTesting.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/Android.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/Linux.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/UnixPaths.cmake C$:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx: phony
+build ../../../../../CMakeLists.txt /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCCompiler.cmake.in /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCCompilerABI.c /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCInformation.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXCompiler.cmake.in /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCXXInformation.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCCompiler.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCXXCompiler.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompileFeatures.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompiler.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineCompilerABI.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeFindBinUtils.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeGenericSystem.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeParseImplicitLinkInfo.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystem.cmake.in /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCCompiler.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCXXCompiler.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/CMakeTestCompilerCommon.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-C-FeatureTests.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-C.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX-FeatureTests.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX-TestableFeatures.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/Clang.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Compiler/GNU.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Internal/FeatureTesting.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/Android.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/Linux.cmake /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/share/cmake-3.6/Modules/Platform/UnixPaths.cmake /Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx: phony
 
 #############################################
 # Clean all the built files.

@@ -1,14 +1,14 @@
-Executable : C:\Users\Constantin\AppData\Local\Android\Sdk\cmake\3.6.3155560\bin\cmake.exe
+Executable : /Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake
 arguments : 
--HC:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR
--BC:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\.externalNativeBuild\cmake\debug\armeabi-v7a
+-H/Users/abdulhadimohamed/legaltech
+-B/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/debug/armeabi-v7a
 -GAndroid Gradle - Ninja
 -DANDROID_ABI=armeabi-v7a
--DANDROID_NDK=C:\Users\Constantin\AppData\Local\Android\Sdk\ndk-bundle
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\Constantin\Desktop\Android Studio Projects\FPV_VR\app\build\intermediates\cmake\debug\obj\armeabi-v7a
+-DANDROID_NDK=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/abdulhadimohamed/legaltech/app/build/intermediates/cmake/debug/obj/armeabi-v7a
 -DCMAKE_BUILD_TYPE=Debug
--DCMAKE_MAKE_PROGRAM=C:\Users\Constantin\AppData\Local\Android\Sdk\cmake\3.6.3155560\bin\ninja.exe
--DCMAKE_TOOLCHAIN_FILE=C:\Users\Constantin\AppData\Local\Android\Sdk\ndk-bundle\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/ninja
+-DCMAKE_TOOLCHAIN_FILE=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
 -DANDROID_PLATFORM=android-21
 jvmArgs : 
 

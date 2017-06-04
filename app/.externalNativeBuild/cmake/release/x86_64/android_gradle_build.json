@@ -1,13 +1,10 @@
 
 {
-	"buildFiles" : 
-	[
-		"C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/CMakeLists.txt"
-	],
+	"buildFiles" : [ "/Users/abdulhadimohamed/legaltech/CMakeLists.txt" ],
 	"cFileExtensions" : [ "c" ],
 	"cleanCommands" : 
 	[
-		"C:\\Users\\Constantin\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build \"C:\\Users\\Constantin\\Desktop\\Android Studio Projects\\FPV_VR\\app\\.externalNativeBuild\\cmake\\release\\x86_64\" --target clean"
+		"/Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/x86_64 --target clean"
 	],
 	"libraries" : 
 	{
@@ -15,63 +12,63 @@
 		{
 			"abi" : "x86_64",
 			"artifactName" : "VsyncHelperNative",
-			"buildCommand" : "C:\\Users\\Constantin\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build \"C:\\Users\\Constantin\\Desktop\\Android Studio Projects\\FPV_VR\\app\\.externalNativeBuild\\cmake\\release\\x86_64\" --target VsyncHelperNative",
+			"buildCommand" : "/Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/x86_64 --target VsyncHelperNative",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -DVsyncHelperNative_EXPORTS -I..\\..\\..\\..\\src\\main\\c-ndk -I..\\..\\..\\..\\src\\main\\c-ndk\\package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
-					"src" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/src/main/c-ndk/package2/VsyncHelperNative.c",
-					"workingDirectory" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/release/x86_64"
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -DVsyncHelperNative_EXPORTS -I../../../../src/main/c-ndk -I../../../../src/main/c-ndk/package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/abdulhadimohamed/legaltech/app/src/main/c-ndk/package2/VsyncHelperNative.c",
+					"workingDirectory" : "/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/x86_64"
 				}
 			],
-			"output" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/build/intermediates/cmake/release/obj/x86_64/libVsyncHelperNative.so",
-			"toolchain" : "2207939819"
+			"output" : "/Users/abdulhadimohamed/legaltech/app/build/intermediates/cmake/release/obj/x86_64/libVsyncHelperNative.so",
+			"toolchain" : "14089076456727345415"
 		},
 		"parser-Release-x86_64" : 
 		{
 			"abi" : "x86_64",
 			"artifactName" : "parser",
-			"buildCommand" : "C:\\Users\\Constantin\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build \"C:\\Users\\Constantin\\Desktop\\Android Studio Projects\\FPV_VR\\app\\.externalNativeBuild\\cmake\\release\\x86_64\" --target parser",
+			"buildCommand" : "/Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/x86_64 --target parser",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dparser_EXPORTS -I..\\..\\..\\..\\src\\main\\c-ndk -I..\\..\\..\\..\\src\\main\\c-ndk\\package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
-					"src" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/src/main/c-ndk/parser.c",
-					"workingDirectory" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/release/x86_64"
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dparser_EXPORTS -I../../../../src/main/c-ndk -I../../../../src/main/c-ndk/package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/abdulhadimohamed/legaltech/app/src/main/c-ndk/parser.c",
+					"workingDirectory" : "/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/x86_64"
 				}
 			],
-			"output" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/build/intermediates/cmake/release/obj/x86_64/libparser.so",
-			"toolchain" : "2207939819"
+			"output" : "/Users/abdulhadimohamed/legaltech/app/build/intermediates/cmake/release/obj/x86_64/libparser.so",
+			"toolchain" : "14089076456727345415"
 		},
 		"qcom-Release-x86_64" : 
 		{
 			"abi" : "x86_64",
 			"artifactName" : "qcom",
-			"buildCommand" : "C:\\Users\\Constantin\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build \"C:\\Users\\Constantin\\Desktop\\Android Studio Projects\\FPV_VR\\app\\.externalNativeBuild\\cmake\\release\\x86_64\" --target qcom",
+			"buildCommand" : "/Users/abdulhadimohamed/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/x86_64 --target qcom",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dqcom_EXPORTS -I..\\..\\..\\..\\src\\main\\c-ndk -I..\\..\\..\\..\\src\\main\\c-ndk\\package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
-					"src" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/src/main/c-ndk/qcom.c",
-					"workingDirectory" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/.externalNativeBuild/cmake/release/x86_64"
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dqcom_EXPORTS -I../../../../src/main/c-ndk -I../../../../src/main/c-ndk/package2  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/abdulhadimohamed/legaltech/app/src/main/c-ndk/qcom.c",
+					"workingDirectory" : "/Users/abdulhadimohamed/legaltech/app/.externalNativeBuild/cmake/release/x86_64"
 				}
 			],
-			"output" : "C:/Users/Constantin/Desktop/Android Studio Projects/FPV_VR/app/build/intermediates/cmake/release/obj/x86_64/libqcom.so",
-			"toolchain" : "2207939819"
+			"output" : "/Users/abdulhadimohamed/legaltech/app/build/intermediates/cmake/release/obj/x86_64/libqcom.so",
+			"toolchain" : "14089076456727345415"
 		}
 	},
 	"toolchains" : 
 	{
-		"2207939819" : 
+		"14089076456727345415" : 
 		{
-			"cCompilerExecutable" : "C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
-			"cppCompilerExecutable" : "C:/Users/Constantin/AppData/Local/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+			"cCompilerExecutable" : "/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/abdulhadimohamed/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
 		}
 	}
 }
